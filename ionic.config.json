@@ -1,0 +1,7 @@
+{
+  "name": "cursoSpringIonic",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
