@@ -10,7 +10,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { CategoriaService } from '../services/domain/categoria.service';
 import { ErroInterceptorProvider } from '../interceptors/error-interceptors';
 import { AuthService } from '../services/domain/auth.service';
-import { StorageService } from '../services/domain/storege.service';
+import { ClienteService } from '../services/domain/cliente.service';
+import { StorageService } from '../services/storege.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { StorageService } from '../services/domain/storege.service';
     CategoriaService,
     AuthService,
     ErroInterceptorProvider,
-    StorageService
+    StorageService,
+    ClienteService
   ]
 })
 export class AppModule {}

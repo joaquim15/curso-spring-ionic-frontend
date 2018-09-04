@@ -1,10 +1,10 @@
 import { Injectable } from "@angular/core";
-import { CredenciaisDTO } from "../../models/credenciais.dto";
 import { HttpClient } from "@angular/common/http";
-import { API_CONFIG } from "../../config/api.config";
-import { LocalUser } from "../../models/local_user";
+import { LocalUser } from "../models/local_user";
+import { StorageService } from "./storege.service";
 import { JwtHelper } from "angular2-jwt";
-import { StorageService } from "../storege.service";
+import { CredenciaisDTO } from "../models/credenciais.dto";
+import { API_CONFIG } from "../config/api.config";
 
 @Injectable()
 export class AuthService {
