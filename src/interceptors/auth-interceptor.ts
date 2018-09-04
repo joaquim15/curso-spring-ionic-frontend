@@ -8,7 +8,6 @@ import { API_CONFIG } from "../config/api.config";
 export class AuthInterceptor implements HttpInterceptor{
 
     constructor(public storage: StorageService){
-
     }
 
     intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
