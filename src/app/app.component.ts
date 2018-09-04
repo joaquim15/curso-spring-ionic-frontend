@@ -39,7 +39,10 @@ export class MyApp {
     });
   }
 
-  openPage(page : { title:string, component: string}) {
+  openPage(page : { 
+              title:string, 
+              component: string}) {
+
     switch (page.title){
 
       case 'Logout':
@@ -49,6 +52,7 @@ export class MyApp {
 
       default:
         this.nav.setRoot(page.component);
+        break;
     }
   }
 }
