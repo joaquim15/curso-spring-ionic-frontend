@@ -1,10 +1,10 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
-import { LocalUser } from "../models/local_user";
-import { StorageService } from "./storege.service";
 import { JwtHelper } from "angular2-jwt";
 import { CredenciaisDTO } from "../models/credenciais.dto";
+import { StorageService } from "./storege.service";
 import { API_CONFIG } from "../config/api.config";
+import { LocalUser } from "../models/local_user";
 
 @Injectable()
 export class AuthService {
@@ -22,6 +22,13 @@ export class AuthService {
             responseType: 'text'
         });
     }
+
+    refreshToken(){
+        return this.http.post(`${API_CONFIG.baseUrl}/auth/refresh_token`, {}, {
+             observe: 'response',
+             responseType: 'text'
+         });
+     }
 
     successfullLogin(authorizationValue : String ){
 

@@ -9,10 +9,10 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { CategoriaService } from '../services/domain/categoria.service';
 import { ErroInterceptorProvider } from '../interceptors/error-interceptors';
-import { AuthService } from '../services/domain/auth.service';
 import { ClienteService } from '../services/domain/cliente.service';
 import { StorageService } from '../services/storege.service';
 import { AuthInterceptorProvider } from '../interceptors/auth-interceptor';
+import { AuthService } from '../services/auth.service';
 
 @NgModule({
   declarations: [
