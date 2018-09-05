@@ -26,12 +26,14 @@ export class CategoriasPage {
               public categoriaService: CategoriaService) {
   }
 
-
-
   ionViewDidLoad() {
     this.categoriaService.findAllCategorias()
     .subscribe(response => {
       this.items = response;
     }, error => {});
+  }
+
+  showProdutos(){
+    this.navCtrl.push('ProdutosPage');
   }
 }
