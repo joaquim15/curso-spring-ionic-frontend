@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { ProdutDTO } from '../../models/produto.dto';
+import { ProdutoDTO } from '../../models/produto.dto';
 import { ProdutoService } from '../../services/domain/produto.service';
 import { API_CONFIG } from '../../config/api.config';
 
@@ -11,7 +11,7 @@ import { API_CONFIG } from '../../config/api.config';
 })
 export class ProdutosPage {
 
-  items : ProdutDTO[];
+  items : ProdutoDTO[];
 
   constructor(public navCtrl: NavController, 
               public navParams: NavParams, 
