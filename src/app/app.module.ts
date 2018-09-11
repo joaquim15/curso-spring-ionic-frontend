@@ -15,6 +15,7 @@ import { AuthInterceptorProvider } from '../interceptors/auth-interceptor';
 import { AuthService } from '../services/auth.service';
 import { ProdutoService } from '../services/domain/produto.service';
 import { CartService } from '../services/domain/cart.service';
+import { Camera } from "@ionic-native/camera";
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CartService } from '../services/domain/cart.service';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    Camera,
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
     CategoriaService,
     AuthInterceptorProvider,
     ErroInterceptorProvider,
@@ -43,4 +45,4 @@ import { CartService } from '../services/domain/cart.service';
     CartService
   ]
 })
-export class AppModule {}
+export class AppModule { }
