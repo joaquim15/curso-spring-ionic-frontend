@@ -101,12 +101,12 @@ export class ProfilePage {
         this.picture = null;
         this.loadData();
 
-      }, error =>{
+      }, error => {
 
       });
   }
 
-  cancel(){
+  cancel() {
     this.picture = null;
   }
 
